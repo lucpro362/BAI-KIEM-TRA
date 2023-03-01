@@ -38,10 +38,11 @@ body {
         rgba(255, 255, 255, 0)
     );
 }
-a {
+a{
     background-color: transparent;
     display: inline;
     max-height: 60px;
+    text-decoration-line:none;
     
 }
 h1, h2, h3, h4, h5{
@@ -68,7 +69,14 @@ font-weight: 500;
     display: flex;
     align-items: center;
 }
+navbar-fixed{
+    position:sticky;
+    width: 100%;
+    top:0px;
+    z-index: 100;
+    color:#fff
 
+}
 .navbar-nav .nav-item .nav-link {
     position: relative;
 }
@@ -95,7 +103,7 @@ font-weight: 500;
 .header-menu-icon a:first-child {
     margin-left: 0 !important;
 }
-.header-menu-icon a {
+.header-menu-icon {
     margin-left: 10px;
 }
 
@@ -156,7 +164,8 @@ font-weight: 500;
     }
     .trending_items{
         padding: 70px 40px;
-        background-color: #f4edf2;
+        background: #e8b1d8;
+        position:relative;
 }}
 .slide-content{
     position: absolute;
@@ -173,44 +182,45 @@ font-weight: 500;
     background-color: #B08EAD;
     position: relative;
     
-  }
-  .slide-item p{
-    font-size: 24px;
-    line-height: 1.5;
-    color: #fff;
-
-  }
   .slide-img {
-    border-radius: 50%;}
+    border-radius: 5px;}
 
-    .btn{
-width: 0px;
-padding: 0px;
-height: 0px;
-border: 0px;
-    }
+      .btn_1 {
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 1px 1px 5px 0 #aaaaaa80;
+        background: #f0afd4;
+        transition: all 1s ease;
+      }
+      .btn_1:hover {
+        background: rgb(248, 248, 248);
+        transform: translatey(-10px);
+        border: 1px solid;
+      }
     
-    .btn_1{
-        display: inline-block;
-        padding: 17px 50px;
-        border-radius: 5px ;
-        background-color: #B08EAD;
-        font-size: 15px;
-        font-weight: 500;
-        transition: 0.5s;
-        color:#fff;
+      .btn_3 {
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 1px 1px 5px 0 #aaaaaa80;
+        background: #f0afd4;
+        transition: all 1s ease;
     }
-    .btn_3{
-        display: inline-block;
-        padding: 16px 40px;
-        border-radius: 5px;
-        background-color:transparent;
-        border: 1px solid  #B08EAD;
-        font-size: 15px;
-        color:  #B08EAD;
-        text-transform: uppercase;
-        font-weight: 400;
-        transition: 0.5s;
+    .btn_3:hover {
+        background: rgb(224, 172, 192);
+        transform: translatey(-10px);
+        border: 1px solid;}
 
+    .feature_part,.single_feature_part{ 
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 25px auto;
+        padding: 25px;
+        font-style: italic;
+        border: 1px solid #E4D3DF;
     }
-   
+.img {
+    vertical-align: middle;
+    border: none;
+}
+.trending_items {
+    background-color: #e8b1d8;}
